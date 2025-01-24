@@ -219,8 +219,6 @@ footer{
 	text-indent: 0;
 }
 
-[epub|type~="z3998:sender"],
-[epub|type~="z3998:recipient"],
 [epub|type~="z3998:salutation"],
 [epub|type~="z3998:signature"]{
 	font-variant: small-caps;
@@ -234,21 +232,29 @@ footer{
 /* end of letters */
 
 /* poem/verse/song */
+[epub|type~="z3998:poem"] p,
+[epub|type~="z3998:song"] p,
 [epub|type~="z3998:verse"] p{
 	text-align: initial;
 	text-indent: 0;
 }
 
+[epub|type~="z3998:poem"] p > span,
+[epub|type~="z3998:song"] p > span,
 [epub|type~="z3998:verse"] p > span{
 	display: block;
 	padding-left: 1em;
 	text-indent: -1em;
 }
 
+[epub|type~="z3998:poem"] p > span + br,
+[epub|type~="z3998:song"] p > span + br,
 [epub|type~="z3998:verse"] p > span + br{
 	display: none;
 }
 
+[epub|type~="z3998:poem"] p + p,
+[epub|type~="z3998:song"] p + p,
 [epub|type~="z3998:verse"] p + p{
 	margin-top: 1em;
 }
@@ -263,9 +269,79 @@ p span.i2{
 	text-indent: -1em;
 }
 
+p span.i3{
+	padding-left: 4em;
+	text-indent: -1em;
+}
+
+p span.i4{
+	padding-left: 5em;
+	text-indent: -1em;
+}
+
 /* elision ⋮ */
 span.elision{
 	margin: .5em;
 	margin-left: 3em;
 }
 /* end of poem/verse/song */
+
+/* custom */
+blockquote header,
+#a-distinguished-provincial-at-paris blockquote:nth-of-type(13) header,
+#a-distinguished-provincial-at-paris blockquote:nth-of-type(13) header p:first-child{
+	margin-bottom: 1em;
+}
+
+table {
+	margin: 1em auto;
+}
+
+#a-distinguished-provincial-at-paris blockquote:nth-of-type(13) header p:last-child{
+	text-align: initial;
+}
+
+[epub|type~="z3998:letter"] header p:first-of-type{
+	font-style: italic;
+	text-align: center;
+}
+
+[epub|type~="z3998:poem"] header,
+[epub|type~="se:letter.dateline"],
+#two-poets blockquote:nth-of-type(3),
+#a-distinguished-provincial-at-paris blockquote:nth-of-type(5) header,
+#a-distinguished-provincial-at-paris blockquote:nth-of-type(13) header p:first-child,
+#eve-and-david blockquote:nth-of-type(4) header,
+#eve-and-david blockquote:nth-of-type(16) header{
+	font-variant: small-caps
+}
+
+#a-distinguished-provincial-at-paris blockquote:nth-of-type(5) p,
+#a-distinguished-provincial-at-paris blockquote:last-of-type p{
+	text-indent: 0;
+}
+
+#a-distinguished-provincial-at-paris blockquote:last-of-type{
+	line-height: 2;
+	text-align: center;
+}
+
+#a-distinguished-provincial-at-paris blockquote:last-of-type p:first-of-type{
+	font-variant: small-caps;
+}
+
+#a-distinguished-provincial-at-paris blockquote:last-of-type p:first-of-type b{
+	text-transform: uppercase;
+}
+
+#eve-and-david blockquote:nth-of-type(13){
+	text-align: center;
+}
+
+#eve-and-david blockquote:nth-of-type(15) header p:first-of-type,
+[epub|type~="se:letter.dateline"]{
+	font-style: normal;
+	margin-top: 1em;
+	text-align: right;
+}
+/* end of custom */
