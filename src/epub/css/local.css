@@ -293,8 +293,51 @@ blockquote header,
 	margin-bottom: 1em;
 }
 
-table {
+table{
 	margin: 1em auto;
+}
+
+blockquote:nth-of-type(4) td:nth-of-type(n+2){
+	font-variant-numeric: tabular-nums;
+	padding-left: 1em;
+	text-align: right;
+}
+
+blockquote:nth-of-type(4) th,
+blockquote:nth-of-type(7) th{
+	font-weight: normal;
+	text-align: right;
+}
+
+blockquote:nth-of-type(7) table{
+	width: 100%;
+}
+
+blockquote:nth-of-type(7) td:nth-of-type(-n+2){
+	text-align: center;
+	width: 5%;
+}
+
+blockquote:nth-of-type(7) td:nth-of-type(-n+3){
+	vertical-align: top;
+}
+
+blockquote:nth-of-type(7) td:nth-of-type(3){
+	width: 80%;
+}
+
+blockquote:nth-of-type(7) td:nth-of-type(n+4){
+	font-variant-numeric: tabular-nums;
+	padding-right: .5em;
+	text-align: right;
+	vertical-align: bottom;
+	width: 5%;
+}
+
+blockquote:nth-of-type(4) tbody tr:nth-last-of-type(2) td:nth-of-type(n+2),
+blockquote:nth-of-type(4) tfoot td:nth-of-type(n+2),
+blockquote:nth-of-type(7) tfoot td:nth-of-type(n+4){
+	border-top: solid 1px black;
 }
 
 #a-distinguished-provincial-at-paris blockquote:nth-of-type(13) header p:last-child{
