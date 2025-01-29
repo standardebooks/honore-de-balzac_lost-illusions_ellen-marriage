@@ -38,35 +38,6 @@ blockquote[xml|lang]{
 }
 /* end of bridgeheads */
 
-/* centered dedications */
-section[epub|type~="dedication"]{
-	text-align: center;
-}
-
-section[epub|type~="dedication"] > *{
-	display: inline-block;
-	margin: auto;
-	margin-top: 3em;
-	max-width: 80%;
-}
-
-@supports(display: flex){
-	section[epub|type~="dedication"]{
-		align-items: center;
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		min-height: calc(98vh - 3em);
-		padding-top: 3em;
-	}
-
-	section[epub|type~="dedication"] > *{
-		margin: 0;
-	}
-}
-/* end of centered dedications */
-
 /* all epigraphs */
 [epub|type~="epigraph"]{
 	font-style: italic;
@@ -297,51 +268,11 @@ table{
 	margin: 1em auto;
 }
 
-blockquote:nth-of-type(4) td:nth-of-type(n+2){
-	font-variant-numeric: tabular-nums;
-	padding-left: 1em;
+[epub|type~="se:letter.dateline"],
+#eve-and-david blockquote:nth-of-type(15) header p:first-of-type{
+	font-style: normal;
+	margin-top: 1em;
 	text-align: right;
-}
-
-blockquote:nth-of-type(4) th,
-blockquote:nth-of-type(7) th{
-	font-weight: normal;
-	text-align: right;
-}
-
-blockquote:nth-of-type(7) table{
-	width: 100%;
-}
-
-blockquote:nth-of-type(7) td:nth-of-type(-n+2){
-	text-align: center;
-	width: 5%;
-}
-
-blockquote:nth-of-type(7) td:nth-of-type(-n+3){
-	vertical-align: top;
-}
-
-blockquote:nth-of-type(7) td:nth-of-type(3){
-	width: 80%;
-}
-
-blockquote:nth-of-type(7) td:nth-of-type(n+4){
-	font-variant-numeric: tabular-nums;
-	padding-right: .5em;
-	text-align: right;
-	vertical-align: bottom;
-	width: 5%;
-}
-
-blockquote:nth-of-type(4) tbody tr:nth-last-of-type(2) td:nth-of-type(n+2),
-blockquote:nth-of-type(4) tfoot td:nth-of-type(n+2),
-blockquote:nth-of-type(7) tfoot td:nth-of-type(n+4){
-	border-top: solid 1px black;
-}
-
-#a-distinguished-provincial-at-paris blockquote:nth-of-type(13) header p:last-child{
-	text-align: initial;
 }
 
 [epub|type~="z3998:letter"] header p:first-of-type{
@@ -357,6 +288,58 @@ blockquote:nth-of-type(7) tfoot td:nth-of-type(n+4){
 #eve-and-david blockquote:nth-of-type(4) header,
 #eve-and-david blockquote:nth-of-type(16) header{
 	font-variant: small-caps
+}
+
+#dedication header{
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
+#eve-and-david blockquote:nth-of-type(4) td:nth-of-type(n+2){
+	font-variant-numeric: tabular-nums;
+	padding-left: 1em;
+	text-align: right;
+}
+
+#eve-and-david blockquote:nth-of-type(4) th,
+#eve-and-david blockquote:nth-of-type(7) th{
+	font-weight: normal;
+	text-align: right;
+}
+
+#eve-and-david blockquote:nth-of-type(7) table{
+	width: 100%;
+}
+
+#eve-and-david blockquote:nth-of-type(7) td:nth-of-type(-n+2){
+	text-align: center;
+	width: 5%;
+}
+
+#eve-and-david blockquote:nth-of-type(7) td:nth-of-type(-n+3){
+	vertical-align: top;
+}
+
+#eve-and-david blockquote:nth-of-type(7) td:nth-of-type(3){
+	width: 80%;
+}
+
+#eve-and-david blockquote:nth-of-type(7) td:nth-of-type(n+4){
+	font-variant-numeric: tabular-nums;
+	padding-right: .5em;
+	text-align: right;
+	vertical-align: bottom;
+	width: 5%;
+}
+
+#eve-and-david blockquote:nth-of-type(4) tbody tr:nth-last-of-type(2) td:nth-of-type(n+2),
+#eve-and-david blockquote:nth-of-type(4) tfoot td:nth-of-type(n+2),
+#eve-and-david blockquote:nth-of-type(7) tfoot td:nth-of-type(n+4){
+	border-top: solid 1px black;
+}
+
+#a-distinguished-provincial-at-paris blockquote:nth-of-type(13) header p:last-child{
+	text-align: initial;
 }
 
 #a-distinguished-provincial-at-paris blockquote:nth-of-type(5) p,
@@ -375,16 +358,5 @@ blockquote:nth-of-type(7) tfoot td:nth-of-type(n+4){
 
 #a-distinguished-provincial-at-paris blockquote:last-of-type p:first-of-type b{
 	text-transform: uppercase;
-}
-
-#eve-and-david blockquote:nth-of-type(13){
-	text-align: center;
-}
-
-#eve-and-david blockquote:nth-of-type(15) header p:first-of-type,
-[epub|type~="se:letter.dateline"]{
-	font-style: normal;
-	margin-top: 1em;
-	text-align: right;
 }
 /* end of custom */
