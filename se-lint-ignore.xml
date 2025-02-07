@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <se-lint-ignore>
-	<file path="eve-and-david.xhtml">
+	<file path="part-3.xhtml">
 		<ignore>
 			<code>t-005</code>
 			<reason>Matched text is not dialog.</reason>
