@@ -97,7 +97,11 @@ table{
 	text-align: center;
 }
 
-[epub|type~="z3998:poem"] header,
+[epub|type~="z3998:poem"] header p{
+	font-variant: small-caps;
+	text-align: center;
+}
+
 [epub|type~="se:letter.dateline"],
 #two-poets blockquote:nth-of-type(3),
 #a-distinguished-provincial-at-paris blockquote:nth-of-type(5) header,
