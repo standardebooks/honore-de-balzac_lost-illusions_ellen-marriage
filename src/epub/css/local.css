@@ -100,11 +100,13 @@ table{
 	text-align: right;
 }
 
+/* letters that have "X to Y" in header */
 [epub|type~="z3998:letter"] header p:first-of-type{
 	font-style: italic;
 	text-align: center;
 }
 
+/* standard poem CSS defines [poem] p, have to override for header */
 [epub|type~="z3998:poem"] header p{
 	font-variant: small-caps;
 	text-align: center;
@@ -114,6 +116,7 @@ table{
 #part-1 blockquote:nth-of-type(3),
 #part-2 blockquote:nth-of-type(5) header,
 #part-2 blockquote:nth-of-type(13) header p:first-child,
+#part-2 blockquote:last-of-type p:first-of-type,
 #part-3 blockquote:nth-of-type(4) header,
 #part-3 blockquote:nth-of-type(16) header{
 	font-variant: small-caps
@@ -139,19 +142,18 @@ table{
 	text-indent: 0;
 }
 
+/* Coralie's gravestone */
 #part-2 blockquote:last-of-type{
 	line-height: 2;
 	text-align: center;
 }
 
-#part-2 blockquote:last-of-type p:first-of-type{
-	font-variant: small-caps;
-}
-
+/* Coralie's gravestone */
 #part-2 blockquote:last-of-type p:first-of-type b{
 	text-transform: uppercase;
 }
 
+/* first bill */
 #part-3 blockquote:nth-of-type(4) td:nth-of-type(n+2){
 	font-variant-numeric: tabular-nums;
 	padding-left: 1em;
@@ -164,6 +166,8 @@ table{
 	text-align: right;
 }
 
+/* the second bill; it consists of three tables, so set the width to 100% so that all
+   three line up */
 #part-3 blockquote:nth-of-type(7) table{
 	width: 100%;
 }
@@ -193,5 +197,16 @@ table{
 #part-3 blockquote:nth-of-type(4) tfoot td:nth-of-type(n+2),
 #part-3 blockquote:nth-of-type(7) tfoot td:nth-of-type(n+4){
 	border-top: solid 1px black;
+}
+
+/* Châtelet's card */
+#part-3 blockquote:nth-of-type(14){
+	text-align: center;
+}
+
+/* letter from Florine's drawing-room */
+#part-3 blockquote:nth-of-type(16) header p:first-of-type{
+	font-style: initial;
+	text-align: right;
 }
 /* end of custom */
