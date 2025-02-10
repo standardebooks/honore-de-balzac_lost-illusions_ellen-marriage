@@ -119,7 +119,7 @@ table{
 #part-2 blockquote:last-of-type p:first-of-type,
 #part-3 blockquote:nth-of-type(4) header,
 #part-3 blockquote:nth-of-type(16) header{
-	font-variant: small-caps
+	font-variant: small-caps;
 }
 
 #dedication header{
