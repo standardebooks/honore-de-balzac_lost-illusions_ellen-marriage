@@ -39,9 +39,13 @@
 		<meta property="collection-type" refines="#collection-1">series</meta>
 		<meta id="collection-2" property="belongs-to-collection">The Human Comedy: Scenes from Provincial Life</meta>
 		<meta property="collection-type" refines="#collection-2">series</meta>
-		<dc:description id="description">DESCRIPTION</dc:description>
+		<dc:description id="description">A young woman and her husband try to make something of their printing business, her brother tries to find success as an author in Paris, and both find the going very difficult.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			LONG_DESCRIPTION
+			&lt;p&gt;When David Séchard comes of age, his father wants to sell him his printing press business at three times what it’s worth; David, as generous as his father is miserly, agrees to the price because he loves his father. David soon runs across an old school chum, Lucien, and his sister Eve. Lucien is strikingly handsome, with ambitions to be a poet. Both David and Eve become devoted to doing whatever it takes to help Lucien succeed, and, while doing so, they fall in love with each other.&lt;/p&gt;
+			&lt;p&gt;With a ruthless competitor in town that is trashing his reputation and thus drastically reducing his income, an exorbitant rent and debt payment to his father, and a new wife who, together with David is entirely too occupied with giving Lucien whatever money he needs to support his desired lifestyle, David and Eve struggle to make ends meet. David does not have a head for business; he has ideas of inventing a new way to make paper at less than half the cost of the current process, and concentrates on that rather than printing.&lt;/p&gt;
+			&lt;p&gt;Lucien in the meantime takes up with a society woman in town who is twice his age. They decide to run off together to Paris so Lucien can make his place as a writer and poet, with David and Eve supplying him a substantial amount of money to help him support himself until he can sell his novel and book of poetry. In Paris, Lucien is abandoned by his paramour, falls in love with an actress and turns to journalism when he is unsuccessful at getting anyone to print his books. He finds success, but with it comes dangerous jealousies. At his lowest, Lucien forges three notes in David’s name for money.&lt;/p&gt;
+			&lt;p&gt;Meanwhile David has all but abandoned his printing business to work on his invention, leaving Eve to do what she can to provide them an income. They are in debt to his father, in debt because of Lucien’s forged notes, in debt from not making enough to cover their regular expenses. A crooked lawyer and David’s competitors devise a scheme to cheat David out of his invention, and although Eve sees through at least some of what is going on around them, it may not be enough.&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;Lost Illusions&lt;/i&gt; is about just that—David believes he can be a rich inventor, Lucien believes he can be a rich and famous writer, and Eve believes she can help both the men in her life to succeed in their dreams. All three have to discover what is illusion and what is real, and the process will be painful for all of them.&lt;/p&gt;
 		</meta>
 		<dc:language>en-US</dc:language>
 		<!-- TRANSCRIPTIONS -->
@@ -56,7 +60,9 @@
 		<dc:source>https://archive.org/details/worksofhonorde15balzuoft</dc:source>
 		<!-- A Distinguished Provincial at Paris -->
 		<dc:source>https://archive.org/details/worksofhonorde16balzuoft</dc:source>
-		<meta property="se:production-notes">The transcription was missing all of the diacritics and thematic breaks, and a few of the italics were in all caps.</meta>
+		<meta property="se:production-notes">The transcription was missing all of the diacritics and thematic breaks, and a few of the italics were in all caps.
+		The translation has two parts to A Distinguished Provincial at Paris; those two parts do not exist in the French, and where the translation shows “Part II” starting is in the middle of a paragraph in the French original. This edition therefore ignores those sub-parts. (This English edition also split Distinguished Provincial out from Lost Illusions, so it’s already at odds with how Balzac arranged it.)
+		</meta>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Lost_Illusions</meta>
