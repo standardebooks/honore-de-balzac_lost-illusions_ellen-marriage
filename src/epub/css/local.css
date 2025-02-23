@@ -81,15 +81,8 @@ blockquote header,
 	margin-bottom: 1em;
 }
 
-hgroup{
-	break-after: page;
-}
-
-hgroup + p{
-	margin-top: 20vh;
-}
-
 table{
+	border-collapse: collapse;
 	margin: 1em auto;
 }
 
@@ -124,13 +117,7 @@ table{
 
 #dedication header{
 	font-style: italic;
-	margin-bottom: 1em;
-}
-
-#part-1,
-#part-2,
-#part-3{
-	margin-top: 20vh;
+	margin-top: 3em;
 }
 
 #part-2 blockquote:nth-of-type(13) header p:last-child{
@@ -166,8 +153,7 @@ table{
 	text-align: right;
 }
 
-/* the second bill; it consists of three tables, so set the width to 100% so that all
-   three line up */
+/* the second bill; it consists of three tables, so set the width to 100% so that all three line up */
 #part-3 blockquote:nth-of-type(7) table{
 	width: 100%;
 }
@@ -196,7 +182,7 @@ table{
 #part-3 blockquote:nth-of-type(4) tbody tr:nth-last-of-type(2) td:nth-of-type(n+2),
 #part-3 blockquote:nth-of-type(4) tfoot td:nth-of-type(n+2),
 #part-3 blockquote:nth-of-type(7) tfoot td:nth-of-type(n+4){
-	border-top: solid 1px black;
+	border-top: solid 1px;
 }
 
 /* Châtelet's card */
