@@ -59,7 +59,7 @@
 		<dc:source>https://archive.org/details/worksofhonorde16balzuoft</dc:source>
 		<meta property="se:production-notes">The translation has two parts to `A Distinguished Provincial at Paris`; those two parts do not exist in the French, and where the translation shows `Part II` starting is in the middle of a paragraph in the French original. This edition therefore ignores those sub-parts. (This English edition also split `Distinguished Provincial` out from `Lost Illusions`, so it’s already at odds with how Balzac arranged it.)
 		</meta>
-		<meta property="se:word-count">249817</meta>
+		<meta property="se:word-count">247319</meta>
 		<meta property="se:reading-ease.flesch">67.69</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Lost_Illusions</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/honore-de-balzac_lost-illusions_ellen-marriage</meta>
