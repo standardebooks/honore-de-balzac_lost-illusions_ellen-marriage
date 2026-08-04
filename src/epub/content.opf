@@ -41,7 +41,7 @@
 		<meta property="collection-type" refines="#collection-1">series</meta>
 		<meta id="collection-2" property="belongs-to-collection">The Human Comedy: Scenes from Provincial Life</meta>
 		<meta property="collection-type" refines="#collection-2">series</meta>
-		<dc:abstract>As a young woman and her husband try to make something of their printing business, her brother tries to find success as an author in Paris.</dc:abstract>
+		<meta property="schema:abstract">As a young woman and her husband try to make something of their printing business, her brother tries to find success as an author in Paris.</meta>
 		<dc:description>
 			&lt;p&gt;When David Séchard comes of age, his father wants to sell him his printing press business for three times what it’s worth; David, as generous as his father is miserly, agrees to the price because he loves his father. David soon runs across an old school chum, Lucien, and his sister Eve. Lucien is strikingly handsome, with ambitions to be a poet. Both David and Eve become devoted to doing whatever it takes to help Lucien succeed, and, while doing so, they fall in love.&lt;/p&gt;
 			&lt;p&gt;With a ruthless competitor in town trashing his reputation and drastically reducing his income, an exorbitant rent and debt payment to his father, and a new wife, David struggles to make ends meet. He soon pins his hopes on inventing a new process to create paper more cheaply. In the meantime, Lucien takes up with a society woman who is twice his age, and they decide to run off together to Paris.&lt;/p&gt;
